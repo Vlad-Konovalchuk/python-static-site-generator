@@ -1,4 +1,4 @@
-from typer import Typer
+import typer
 from ssg.site import Site
 
 
@@ -7,4 +7,4 @@ def main(source='content', dest='dist'):
     site = Site(**config).build()
 
 
-Typer.run(main)
+typer.run(main)
